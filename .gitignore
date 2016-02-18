@@ -5,6 +5,8 @@
 .AppleDouble
 .LSOverride
 
+wp-config.php
+
 # Icon must end with two \r
 Icon
 
@@ -90,3 +92,23 @@ node_modules
 
 # sftp configuration file
 sftp-config.json
+=======
+*.log
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
+
+/readme.html
+/license.txt
+
+>>>>>>> e31d2f119bcf8e924d0dd001c25d4796c953e8e4
