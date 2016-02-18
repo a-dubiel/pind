@@ -1,0 +1,35 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `button`
+ * -----------------------------------------------------------------------------
+ */
+
+.c-button {
+  font-family: $base-heading-font-family;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  font-size: 12px;
+  color: map-get($colors, "pind-blue");
+  border-color: map-get($colors, "pind-blue");
+  transition: $base-transition;
+}
+
+
+.c-button {
+
+  &:hover {
+    background-color: map-get($colors, "pind-blue");
+    border-color: map-get($colors, "pind-blue");
+    color: #fff;
+  }
+
+  &--white {
+    color: #fff;
+    border-color: #fff;
+  }
+}

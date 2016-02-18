@@ -1,0 +1,43 @@
+{
+  "name": "pind",
+  "title": "WordPress PIND Theme",
+  "description": "PIND",
+  "version": "1.0.0",
+  "homepage": "http://www.pind.pitt.edu",
+  "author": {
+    "name": "Fame",
+    "url": "http://itsfame.co"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:USER/REPOSITORY.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-changed": "*",
+    "gulp-combine-mq": "*",
+    "gulp-copy": "*",
+    "gulp-csscomb": "*",
+    "gulp-header": "*",
+    "gulp-imagemin": "*",
+    "gulp-include": "*",
+    "gulp-jscs": "*",
+    "gulp-jshint": "*",
+    "gulp-minify-css": "*",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-replace": "*",
+    "gulp-sass": "*",
+    "gulp-scss-lint": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "gulp-watch": "*",
+    "jshint-stylish": "*",
+    "require-dir": "*",
+    "run-sequence": "*"
+  }
+}

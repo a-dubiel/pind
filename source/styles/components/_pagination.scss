@@ -1,0 +1,20 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `pagination`
+ * -----------------------------------------------------------------------------
+ */
+
+.c-pagination {
+  width: 100%;
+  @include clearfix;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+
+  .page-numbers {
+    padding: 5px 10px;
+    border: 1px solid map-get($colors, "border-color");
+  }
+}

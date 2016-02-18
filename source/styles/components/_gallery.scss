@@ -1,0 +1,53 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `gallery`
+ * -----------------------------------------------------------------------------
+ */
+
+.c-gallery {
+
+  margin: 0 0 50px;
+
+  &__row {
+    @include clearfix;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  &__item {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+
+    @include media-above("md") {
+      width: 33.333%;
+      float: left;
+    }
+
+    &--labs {
+      display: block;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 20px;
+      width: 50%;
+      float: left;
+
+      @include media-above("md") {
+        width: 33.333%;
+      }
+    }
+  }
+
+  &__thumb {
+    width: 100%;
+    transition: $base-transition;
+
+    &:hover {
+      box-shadow: 0 0 40px rgba(0, 0, 0, .4);
+    }
+  }
+}

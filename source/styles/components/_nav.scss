@@ -1,0 +1,185 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `nav`
+ * -----------------------------------------------------------------------------
+ */
+.c-nav {
+  float: right;
+
+  &--desktop {
+    display: none;
+
+    @include media-above("md") {
+      display: block;
+    }
+
+    .c-nav__list {
+      padding-top: 10px;
+
+      .menu-item {
+        display: inline;
+        margin-right: 15px;
+
+        &.current-menu-item a,
+        &.current_page_parent a {
+          color: map-get($colors, "pind-blue");
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        @include media-above("lg") {
+          margin-right: 25px;
+        }
+
+        @include media-above("md") {
+          &-4 a {
+            text-indent: -9999px;
+            display: inline-block;
+            background-image: url("../images/icon-home.svg");
+            background-repeat: no-repeat;
+            width: 22px;
+            height: 22px;
+            background-size: 21px 22px;
+            position: relative;
+            top: -1px;
+          }
+
+          &-29 a {
+            text-indent: -9999px;
+            display: inline-block;
+            background-image: url("../images/icon-search.svg");
+            background-repeat: no-repeat;
+            width: 22px;
+            height: 22px;
+            background-size: 21px 22px;
+            position: relative;
+            top: -1px;
+          }
+        }
+      }
+
+      a {
+        color: map-get($colors, "heading-color");
+
+        &:hover {
+          color: map-get($colors, "pind-blue");
+        }
+      }
+    }
+  }
+
+  &--mobile {
+    display: block;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: map-get($colors, "nav-bg");
+    box-shadow: inset 10px 0 20px rgba(0, 0, 0, .3);
+    backface-visibility: hidden;
+    transition: $base-transition;
+    visibility: hidden;
+    z-index: 0;
+
+    .c-nav__list {
+      margin: 30px 0 0 30px;
+
+      .menu-item {
+        margin-bottom: 10px;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+
+    @include media-above("md") {
+      display: none;
+    }
+
+  }
+}
+
+.c-nav__trigger {
+  float: right;
+  margin-top: 11px;
+  text-transform: uppercase;
+
+  @include media-above("md") {
+    display: none;
+  }
+}
+
+.c-nav__icon {
+  display: inline-block;
+  position: relative;
+  width: 25px;
+  height: 2px;
+  background-color: map-get($colors, "pind-blue");
+  transition-property: background-color, transform;
+  transition-duration: .3s;
+  bottom: 4px;
+  margin-left: 5px;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    background: map-get($colors, "pind-blue");
+    transition-property: margin, transform;
+    transition-duration: .3s;
+  }
+
+  &:before {
+    margin-top: -6px;
+  }
+
+  &:after {
+    margin-top: 6px;
+  }
+}
+
+.has-nav-open {
+  overflow: hidden;
+
+  @include media-above("md") {
+    overflow: visible;
+  }
+
+  .c-nav--mobile {
+    visibility: visible;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .c-nav__icon {
+    background: rgba(0, 0, 0, 0);
+
+    &:before {
+      margin-top: 0;
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      margin-top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .c-header,
+  .c-main,
+  .c-footer {
+    transform: translate3d(-250px, 0, 0);
+
+    @include media-above("md") {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}

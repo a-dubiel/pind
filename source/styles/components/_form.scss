@@ -1,0 +1,139 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `main`
+ * -----------------------------------------------------------------------------
+ */
+.c-form {
+  @include clearfix;
+
+  input[type="color"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="email"],
+  input[type="month"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="time"],
+  input[type="url"],
+  input[type="week"] {
+    border-bottom: 1px solid map-get($colors, "border-color");
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0;
+    color: map-get($colors, "heading-color");
+
+    &::-webkit-input-placeholder {
+      color: map-get($colors, "text-color");
+    }
+
+    &:-moz-placeholder {
+      color: map-get($colors, "text-color");
+    }
+
+    &::-moz-placeholder {
+      color: map-get($colors, "text-color");
+    }
+
+    &:-ms-input-placeholder {
+      color: map-get($colors, "text-color");
+    }
+  }
+
+  textarea {
+    padding: 20px;
+    border: 1px solid map-get($colors, "border-color");
+    width: 100%;
+    margin-bottom: 20px;
+    resize: none;
+  }
+
+  label {
+    padding: 20px 0;
+    color: map-get($colors, "meta");
+  }
+
+  div.wpcf7-response-output {
+    margin: 20px 0;
+    padding: 10px;
+    color: #fff;
+    border: 0;
+  }
+
+  div.wpcf7 .screen-reader-response {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  div.wpcf7-mail-sent-ok {
+    background: #609226;
+  }
+
+  div.wpcf7-mail-sent-ng {
+    background: #609226;
+  }
+
+  div.wpcf7-spam-blocked {
+    background: #cc3446;
+  }
+
+  div.wpcf7-validation-errors {
+    background: #cc3446;
+  }
+
+  .wpcf7-form-control-wrap {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  span.wpcf7-not-valid-tip {
+    color: #f00;
+    font-size: 14px;
+    display: block;
+    margin: 5px 0;
+    color: #cc3446;
+  }
+
+  .use-floating-validation-tip span.wpcf7-not-valid-tip {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 100;
+    border: 1px solid #f00;
+    background: #fff;
+    padding: .2em .8em;
+  }
+
+  span.wpcf7-list-item {
+    margin-left: .5em;
+  }
+
+  .wpcf7-display-none {
+    display: none;
+  }
+
+  div.wpcf7 img.ajax-loader {
+    border: 0;
+    vertical-align: middle;
+    margin-left: 4px;
+  }
+
+  div.wpcf7 div.ajax-error {
+    display: none;
+  }
+
+  div.wpcf7 .placeheld {
+    color: #888;
+  }
+}

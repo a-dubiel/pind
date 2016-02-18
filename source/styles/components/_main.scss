@@ -1,0 +1,16 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `main`
+ * -----------------------------------------------------------------------------
+ */
+
+.c-main {
+  @include clearfix;
+  transition: $base-transition;
+  position: relative;
+  z-index: 200;
+  background-color: #fff;
+  margin-top: $header-height;
+}

@@ -1,0 +1,26 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `page-header`
+ * -----------------------------------------------------------------------------
+ */
+
+.c-page-header {
+  padding: 20px 0;
+
+  @include media-above("md") {
+    padding: 50px 0;
+  }
+
+  .c-heading {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+
+    @include media-above("md") {
+      font-size: 44px;
+      line-height: 52px;
+    }
+  }
+}

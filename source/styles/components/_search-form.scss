@@ -1,0 +1,53 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `search-form`
+ * -----------------------------------------------------------------------------
+ */
+
+.c-search-form__wrap {
+
+  .mfp-close {
+    color: #fff !important;
+    display: none;
+  }
+}
+
+.c-search-form {
+  position: absolute;
+  width: 60%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  padding: 20px;
+}
+
+.c-search-form__input {
+  display: block;
+  width: 70%;
+  height: 50px;
+  border-radius: 50px;
+  background: #fff;
+  float: left;
+  line-height: 50px;
+  padding: 0 0 0 20px;
+  font-size: 18px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.c-search-form__button {
+  display: block;
+  width: 30%;
+  height: 50px;
+  float: left;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  padding-left: 20px;
+  font-family: $base-heading-font-family;
+  text-transform: uppercase;
+}

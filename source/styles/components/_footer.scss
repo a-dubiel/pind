@@ -1,0 +1,119 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `footer`
+ * -----------------------------------------------------------------------------
+ */
+.c-footer {
+  @include clearfix;
+  transition: $base-transition;
+  position: relative;
+  z-index: 100;
+  background-color: map-get($colors, "pind-dark-blue");
+  padding: 50px 0;
+  box-shadow: inset 0 10px 20px rgba(0, 0, 0, .3);
+  overflow: hidden;
+
+  @include media-above("lg") {
+    padding: 100px 0;
+  }
+
+  .c-footer__date {
+    color: rgba(255, 255, 255, .4);
+    font-size: 12px;
+  }
+
+  &__box {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+
+    @include media-above("lg") {
+      width: 25%;
+      float: left;
+      text-align: left;
+    }
+
+    &-title {
+      font-family: $base-heading-font-family;
+      color: #fff;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .textwidget,
+    &--widget {
+      color: rgba(255, 255, 255, .7);
+      font-size: 12px;
+      line-height: 18px;
+
+      a {
+        color: #fff;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .textwidget a:first-child {
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .rpwe-block {
+      .rpwe-title {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+
+      .rpwe-li {
+        margin-bottom: 20px;
+      }
+    }
+
+    &--widget {
+      display: none;
+
+      @include media-above("lg") {
+        display: block;
+      }
+    }
+  }
+
+  .textwidget,
+  .rpwe-block {
+    padding-right: 50px;
+  }
+
+  &__pitt-logo {
+    display: inline-block;
+    text-indent: -9999px;
+    width: 198px;
+    height: 20px;
+    background-image: url("../images/logo-pitt.png");
+    background-repeat: no-repeat;
+    margin: 15px 0;
+
+    @include media-hd {
+      background-image: url("../images/logo-pitt@2x.png");
+      background-size: 198px 20px;
+    }
+  }
+
+  &__neuron {
+    background-image: url("../images/bg-neuron.svg");
+    background-repeat: no-repeat;
+    width: 630px;
+    height: 568px;
+    background-size: 630px;
+    position: absolute;
+    left: -100px;
+    top: -50px;
+    opacity: .2;
+    z-index: 0;
+  }
+}

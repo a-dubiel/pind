@@ -1,0 +1,41 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `link`
+ * -----------------------------------------------------------------------------
+ */
+
+.c-link {
+  @include clearfix;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 60px;
+
+  &__group {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include media-above("md") {
+      width: 33%;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+  }
+
+  &__url:hover {
+    text-decoration: underline;
+  }
+
+  &__item {
+    padding: 5px 0;
+    border-bottom: 1px solid map-get($colors, "border-color");
+  }
+
+  &__list {
+    margin-bottom: 40px;
+  }
+
+
+}

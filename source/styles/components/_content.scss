@@ -1,0 +1,245 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `content`
+ * -----------------------------------------------------------------------------
+ */
+.c-content {
+  padding-bottom: 20px;
+
+  &__author {
+    @include clearfix;
+    margin-top: -10px;
+    margin-bottom: 80px;
+
+    @include media-above("md") {
+      margin-top: -40px;
+    }
+  }
+
+  &__author-name {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 18px;
+
+    @include media-above("md") {
+      font-size: 18px;
+      line-height: 20px;
+      margin-top: 15px;
+    }
+  }
+
+  &__author-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    float: left;
+    margin-right: 10px;
+
+    @include media-above("md") {
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      margin-right: 20px;
+    }
+  }
+
+  &__hero {
+    margin-bottom: 80px;
+  }
+
+  &__hero-img {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &__hero-caption {
+    text-align: center;
+    padding: 10px 0;
+    font-style: italic;
+    color: map-get($colors, "meta");
+  }
+
+  &__subtitle {
+    font-size: 18px;
+  }
+
+  &__main {
+    margin-bottom: 40px;
+
+    @include media-above("md") {
+      margin-bottom: 80px;
+    }
+
+    h1 {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    h4 {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    h5 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    h6 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 20px 0;
+    }
+
+    blockquote {
+      font-size: 18px;
+      line-height: 24px;
+      font-style: italic;
+      margin: 10px 0;
+      padding: 5px 0 5px 20px;
+      border-left: 3px solid #eee;
+    }
+
+    blockquote + cite {
+      margin-left: 20px;
+    }
+
+    table {
+      /* Remove spacing between table cells (from Normalize.css) */
+      border-collapse: collapse;
+      border-spacing: 0;
+      empty-cells: show;
+      border: 1px solid #eee;
+    }
+
+    table td,
+    table th {
+      border-left: 1px solid #eee;
+      border-width: 0 0 0 1px;
+      font-size: inherit;
+      margin: 0;
+      overflow: visible;
+      padding: 5px 10px;
+    }
+
+    table td:first-child,
+    table th:first-child {
+      border-left-width: 0;
+    }
+
+    table thead {
+      background-color: #eee;
+      color: #333;
+      text-align: left;
+      vertical-align: bottom;
+    }
+
+    table td {
+      background-color: transparent;
+    }
+
+    dt {
+      font-weight: 700;
+    }
+
+    dd {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+
+    ol {
+      list-style-type: decimal;
+      list-style-position: inside;
+    }
+
+    li ul,
+    li ol {
+      margin-left: 20px;
+    }
+
+    strong,
+    b {
+      font-weight: 700;
+    }
+
+    q,
+    cite,
+    em {
+      font-style: italic;
+    }
+
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .wp-caption-text {
+      text-align: center;
+      font-style: italic;
+      color: map-get($colors, "meta");
+      padding: 5px 0;
+      margin-bottom: 20px;
+    }
+
+    img.alignright {
+      float: right;
+      margin: 0 0 1em 1em;
+    }
+
+    img.alignleft {
+      float: left;
+      margin: 0 1em 1em 0;
+    }
+
+    img.aligncenter {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    a img.alignright {
+      float: right;
+      margin: 0 0 1em 1em;
+    }
+
+    a img.alignleft {
+      float: left;
+      margin: 0 1em 1em 0;
+    }
+
+    a img.aligncenter {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

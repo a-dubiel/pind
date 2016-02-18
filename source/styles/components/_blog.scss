@@ -1,0 +1,76 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `main`
+ * -----------------------------------------------------------------------------
+ */
+
+.c-blog {
+  @include clearfix;
+
+  &__sidebar {
+    width: 100%;
+
+    @include media-above("md") {
+      float: right;
+      width: 30%;
+      padding-left: 40px;
+    }
+  }
+
+  &__posts,
+  &__post {
+    width: 100%;
+
+    @include media-above("md") {
+      float: left;
+      width: 70%;
+    }
+  }
+
+
+  &__post {
+    margin-bottom: 40px;
+  }
+  .c-post-box__row {
+    margin-left: -10px;
+    margin-right: -10px;
+    @include clearfix;
+    padding: 10px 0 20px;
+
+    @include media-above("md") {
+      padding: 0;
+    }
+  }
+
+  &__list {
+    margin-bottom: 40px;
+
+    li {
+      padding: 5px 0;
+      border-bottom: 1px solid map-get($colors, "border-color");
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__hero {
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-position: center center;
+    background-size: cover;
+    margin: 10px 0 20px;
+
+    @include media-above("md") {
+      height: 400px;
+    }
+  }
+
+  .c-content__main {
+    margin-top: 40px;
+  }
+}

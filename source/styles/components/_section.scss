@@ -1,0 +1,20 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `section`
+ * -----------------------------------------------------------------------------
+ */
+
+.c-section {
+  @include clearfix;
+
+  &--box {
+    position: relative;
+    z-index: 200;
+
+    @include media-above("md") {
+      margin-top: -110px;
+    }
+  }
+}

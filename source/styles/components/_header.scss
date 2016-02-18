@@ -1,0 +1,24 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `header`
+ * -----------------------------------------------------------------------------
+ */
+
+.c-header {
+  padding: 20px 0;
+  border-bottom: 1px solid map-get($colors, "border-color");
+  transition: $base-transition;
+  z-index: 1000;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+}
+
+.headroom--unpinned {
+  transform: translate3d(0, -85px, 0);
+}

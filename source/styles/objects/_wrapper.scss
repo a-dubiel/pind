@@ -1,0 +1,35 @@
+/**
+ * Object
+ * -----------------------------------------------------------------------------
+ * Namespace: `o-`
+ * Block: `wrapper`
+ * -----------------------------------------------------------------------------
+ */
+
+.o-wrapper {
+  max-width: get-value($breakpoints, "horizontal", "lg");
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include media-above("xl") {
+    max-width: get-value($breakpoints, "horizontal", "xl");
+  }
+
+  &--mobile-wide {
+    padding: 0;
+
+    @include media-above("md") {
+      padding: 0 20px;
+    }
+  }
+
+  &--content {
+    @include media-above("md") {
+      padding: 0 100px;
+    }
+
+    @include media-above("lg") {
+      padding: 0 150px;
+    }
+  }
+}

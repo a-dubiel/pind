@@ -1,0 +1,53 @@
+/**
+ * Base
+ * -----------------------------------------------------------------------------
+ */
+
+// scss-lint:disable SelectorFormat
+body {
+  font-family: $base-font-family;
+  text-rendering: optimizeSpeed;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  font-size: $base-font-size; // 14px
+  line-height: $base-line-height; // 20px
+  color: map-get($colors, "text-color");
+}
+// scss-lint:lint:enable SelectorFormat
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  color: map-get($colors, "pind-blue");
+  transition: $base-transition;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $base-heading-font-family;
+  color: map-get($colors, "heading-color");
+  font-size: $base-font-size;
+}
+
+
+
+ul,
+ol {
+  list-style-type: none;
+}

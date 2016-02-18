@@ -1,0 +1,96 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `lab-card`
+ * -----------------------------------------------------------------------------
+ */
+
+.c-lab-card {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+
+  @include media-above("sm") {
+    width: 50%;
+    float: left;
+    margin: 0;
+    max-width: none;
+    transition: $base-transition;
+
+    &:hover {
+      box-shadow: 0 0 40px rgba(0, 0, 0, .1);
+    }
+  }
+
+  &--lab {
+    min-height: 500px;
+  }
+
+  &__btns {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px 0;
+    width: 100%;
+  }
+
+  .c-button + .c-button {
+    margin-left: 10px;
+  }
+
+  @include media-above("md") {
+    width: 33.333%;
+  }
+
+  @include media-above("xl") {
+    width: 25%;
+  }
+
+  &__row {
+    margin: 0 -20px 40px -20px;
+  }
+
+  &__profile-photo {
+    display: inline-block;
+    border-radius: 50%;
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__department {
+    font-size: 14px;
+    color: map-get($colors, "text-color");
+    font-family: $base-font-family;
+    margin-bottom: 15px;
+  }
+
+  &__director {
+    font-family: $base-heading-font-family;
+    color: map-get($colors, "heading-color");
+    margin-bottom: 10px;
+
+    &--personell {
+      margin-bottom: 0;
+    }
+  }
+
+  &__information {
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+    height: 60px;
+
+    p {
+      text-overflow: ellipsis;
+    }
+  }
+
+}

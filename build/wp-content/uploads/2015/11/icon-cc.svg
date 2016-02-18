@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="133px" height="105px" viewBox="0 0 133 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.1 (15681) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Donate" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSArtboardGroup" transform="translate(-918.000000, -301.000000)" stroke="#22A7F0" id="Group" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+            <g sketch:type="MSLayerGroup" transform="translate(921.000000, 304.000000)">
+                <path d="M69.1731771,99.4303385 L27.9134115,99.4303385 C12.7188151,99.4303385 0.406901042,87.1184245 0.406901042,71.9238281 L0.406901042,53.582487 C0.406901042,22.4121094 22.4121094,16.9108073 33.4147135,16.9108073 L49.9186198,16.9108073 C55.2658854,16.9108073 60.921224,19.6614583 60.921224,25.1627604 L60.921224,27.9134115 C60.921224,33.4147135 55.4199219,36.1653646 49.9186198,36.1653646 L38.9160156,36.1653646 C38.9160156,36.1653646 33.4147135,55.4199219 22.4121094,55.4199219" id="Stroke-1287" sketch:type="MSShapeGroup"></path>
+                <path d="M55.4199219,66.422526 L91.1783854,66.422526 C95.7334635,66.422526 99.4303385,70.119401 99.4303385,74.6744792 C99.4303385,79.2350586 95.7334635,82.9264323 91.1783854,82.9264323 L69.1731771,82.9264323" id="Stroke-1288" sketch:type="MSShapeGroup"></path>
+                <path d="M55.4199219,82.9264323 L69.1731771,82.9264323 C73.7282552,82.9264323 77.4251302,86.6233073 77.4251302,91.1783854 C77.4251302,95.7389648 73.7282552,99.4303385 69.1731771,99.4303385 L60.921224,99.4303385" id="Stroke-1289" sketch:type="MSShapeGroup"></path>
+                <path d="M126.936849,21.09375 L60.3490885,21.09375" id="Stroke-1290" sketch:type="MSShapeGroup"></path>
+                <path d="M27.9134115,16.9108073 L27.9134115,8.65885417 C27.9134115,4.10377604 31.6102865,0.406901042 36.1653646,0.406901042 L118.684896,0.406901042 C123.239974,0.406901042 126.936849,4.10377604 126.936849,8.65885417 L126.936849,58.1705729 C126.936849,62.7311523 123.239974,66.422526 118.684896,66.422526 L36.1653646,66.422526 C31.6102865,66.422526 27.9134115,62.7311523 27.9134115,58.1705729 L27.9134115,53.6980143" id="Stroke-1291" sketch:type="MSShapeGroup"></path>
+                <path d="M115.934245,32.03125 L99.4303385,32.03125" id="Stroke-1292" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

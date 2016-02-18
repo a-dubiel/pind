@@ -1,0 +1,62 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `logo`
+ * -----------------------------------------------------------------------------
+ */
+
+.c-logo {
+  display: block;
+  text-indent: -9999px;
+  transition: $base-transition;
+
+  &:hover {
+    transform: scale(1.05, 1.05);
+  }
+
+  &--header {
+    width: 98px;
+    height: 42px;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: 98px 42px;
+
+    @include media-hd {
+      background-image: url("../images/logo@2x.png");
+    }
+  }
+
+  &--mobile-nav {
+    width: 98px;
+    height: 42px;
+    background-image: url("../images/logo-white.png");
+    background-repeat: no-repeat;
+    margin: 20px 0 0 30px;
+
+    @include media-hd {
+      background-image: url("../images/logo-white@2x.png");
+      background-size: 98px 42px;
+    }
+  }
+}
+
+.c-logo__type {
+  font-family: $base-heading-font-family;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.c-logo__slogan {
+  font-size: 12px;
+  color: rgba(255, 255, 255, .7);
+  line-height: 14px;
+
+
+  @include media-above("lg") {
+    max-width: 200px;
+  }
+}

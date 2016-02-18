@@ -1,0 +1,136 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `box`
+ * -----------------------------------------------------------------------------
+ */
+
+.c-box {
+  width: 100%;
+  float: left;
+  text-align: center;
+
+  @include media-above("md") {
+    width: 50%;
+    text-align: left;
+  }
+
+  @include media-above("lg") {
+    width: 25%;
+
+    transition: transform .5s;
+    transform: translate3d(0, 60px, 0);
+
+    &:hover {
+      transform: translate3d(0, 0, 0);
+
+      .c-box__bottom {
+        transform: rotate3d(1, 0, 0, 0deg);
+      }
+    }
+  }
+
+  &__content {
+    padding: 20px;
+
+    @include media-above("md") {
+      min-height: 220px;
+    }
+
+    @include media-above("lg") {
+      height: 250px;
+      overflow: hidden;
+    }
+
+    @include media-above("xl") {
+      height: 220px;
+    }
+
+
+    &--first {
+      background-color: map-get($colors, "pind-blue");
+    }
+
+    &--second {
+      background-color: darken(map-get($colors, "pind-blue"), 7%);
+    }
+
+    &--third {
+      background-color: darken(map-get($colors, "pind-blue"), 14%);
+    }
+
+    &--fourth {
+      background-color: darken(map-get($colors, "pind-blue"), 28%);
+    }
+
+
+  }
+
+  &__title,
+  &__text {
+    color: #fff;
+  }
+
+  &__text {
+    max-width: 300px;
+    margin: 0 auto;
+
+    @include media-above("md") {
+      margin: 0;
+      max-width: none;
+    }
+
+    p {
+      color: #fff;
+    }
+
+    a[href^="tel:"] {
+      display: inline-block;
+      font-size: 20px;
+      margin: 5px 0;
+      color: lighten(map-get($colors, "pind-blue"), 20%);
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    margin: 10px 0 20px 0;
+  }
+
+  &__bottom {
+    background-color: map-get($colors, "pind-dark-blue");
+    padding: 20px;
+    height: 60px;
+
+    @include media-below("lg") {
+      padding: 10px 20px;
+
+      &--first {
+        background-color: map-get($colors, "pind-blue");
+      }
+
+      &--second {
+        background-color: darken(map-get($colors, "pind-blue"), 7%);
+      }
+
+      &--third {
+        background-color: darken(map-get($colors, "pind-blue"), 14%);
+      }
+
+      &--fourth {
+        background-color: darken(map-get($colors, "pind-blue"), 28%);
+      }
+    }
+
+
+    @include media-above("lg") {
+      transition: transform .5s;
+      backface-visibility: hidden;
+      perspective: 1000px;
+      transform-origin: top;
+      transform-style: preserve-3d;
+      transform: rotate3d(1, 0, 0, -90deg);
+    }
+  }
+}

@@ -1,0 +1,66 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `video`
+ * -----------------------------------------------------------------------------
+ */
+
+.c-video {
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: table;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .25);
+    z-index: 0;
+  }
+
+  @include media-above("md") {
+    height: 500px;
+    padding: 0;
+  }
+
+  &__content {
+    max-width: 500px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 100;
+  }
+
+  &__title {
+    color: #fff;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 22px;
+    font-family: $base-heading-font-family;
+    max-width: 800px;
+
+    @include media-above("md") {
+      font-size: 44px;
+      line-height: 48px;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      margin: 20px auto;
+      width: 70%;
+      height: 3px;
+      background-color: map-get($colors, "pind-blue");
+    }
+  }
+}

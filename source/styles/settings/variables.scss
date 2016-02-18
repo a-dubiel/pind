@@ -1,0 +1,44 @@
+////
+/// Global variables
+////
+
+
+// Core
+$base-font-family: "Asap", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-heading-font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-transition: all .3s ease-in-out;
+$base-font-size: 14px;
+$base-line-height: 20px;
+
+// Header
+$header-height: 85px;
+
+$breakpoints: (
+  "horizontal": (
+    "xs": 320px,
+    "sm": 520px,
+    "md": 780px,
+    "lg": 940px,
+    "xl": 1120px
+  ),
+  "vertical": (
+    "xs": 320px,
+    "sm": 400px,
+    "md": 550px,
+    "lg": 900px,
+    "xl": 1100px
+  )
+);
+
+
+$colors: (
+  "pitt-blue":      #192857,
+  "pind-blue":      #22a7f0,
+  "pind-dark-blue": #01497e,
+  "pitt-gold":      #cdb87d,
+  "text-color":     #898989,
+  "heading-color":  #333,
+  "border-color":   #e8e8e8,
+  "nav-bg":         #333,
+  "meta":           lighten(#898989, 20%)
+);

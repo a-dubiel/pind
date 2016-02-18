@@ -1,0 +1,15 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `main`
+ * -----------------------------------------------------------------------------
+ */
+
+.c-main {
+  transition: $base-transition;
+  position: relative;
+  z-index: 100;
+  background-color: #fff;
+  margin-top: $header-height;
+}

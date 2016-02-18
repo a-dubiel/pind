@@ -1,0 +1,32 @@
+/**
+ * Component
+ * -----------------------------------------------------------------------------
+ * Namespace: `c-`
+ * Block: `contact`
+ * -----------------------------------------------------------------------------
+ */
+.c-contact {
+  @include clearfix;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 60px;
+
+  &__section {
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+
+    @include media-above("md") {
+      width: 50%;
+      float: left;
+    }
+
+    &--no-pad {
+      padding: 0;
+    }
+  }
+
+  &__photo {
+    width: 100%;
+  }
+}
