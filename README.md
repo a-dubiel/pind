@@ -1,4 +1,4 @@
-# WordPress Theme
+# PIND - Pittsburgh Institute For Neurodegenerative Diseases
 
 ## Table of Contents
 
